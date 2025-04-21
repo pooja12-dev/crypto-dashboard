@@ -1,0 +1,126 @@
+/* WhyUs.css */
+
+.whyus-section {
+  max-width: 1200px;
+  margin: 2.7rem auto 2.8rem;
+  width: 93vw;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7rem 4.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.whyus-map-bg {
+  position: relative;
+  background: radial-gradient(
+    ellipse at 55% 54%,
+    rgba(120, 79, 255, 0.09) 46%,
+    rgba(35, 33, 57, 0.93) 100%
+  );
+  border-radius: 25px;
+  min-width: 300px;
+  min-height: 340px;
+  width: 410px;
+  height: 350px;
+  box-shadow: 0 6px 36px 2px rgba(84, 0, 255, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyus-stat-card {
+  position: absolute;
+  min-width: 110px;
+  background: #201e34ee;
+  color: #fff;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.18rem;
+  padding: 1.1rem 1.2rem 0.7rem 1.1rem;
+  font-size: 1.04rem;
+  box-shadow: 0 3px 25px 0 rgba(120, 79, 255, 0.09);
+  border: 1px solid #272344;
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+  transition: box-shadow 0.13s, transform 0.18s;
+}
+
+.whyus-stat-card:hover {
+  box-shadow: 0 7px 36px 0 rgba(120, 79, 255, 0.19);
+  background: #251d3a;
+}
+
+.whyus-stat-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.whyus-stat-value {
+  font-weight: 800;
+  color: #65f9e5;
+  font-size: 1.19rem;
+  letter-spacing: 0.3px;
+}
+
+.whyus-stat-label {
+  color: #b7bbcb;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.whyus-content {
+  flex: 1.5 1 370px;
+  min-width: 270px;
+  padding-left: 15px;
+}
+
+.whyus-content h2 {
+  color: #fff;
+  font-size: 2.15rem;
+  font-weight: 800;
+  margin-bottom: 0.82rem;
+  letter-spacing: 0.2px;
+}
+
+.whyus-subtitle {
+  color: #cac7f6;
+  font-size: 1.13rem;
+  margin-bottom: 1.3rem;
+}
+
+.whyus-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.08rem;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 950px) {
+  .whyus-section {
+    flex-direction: column;
+    gap: 2.2rem 0;
+  }
+
+  .whyus-map-bg,
+  .whyus-content {
+    width: 100%;
+    min-width: 220px;
+    max-width: 98vw;
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .whyus-section {
+    padding: 0 0.3rem;
+  }
+  .whyus-map-bg {
+    min-width: 96vw;
+    width: 96vw;
+    min-height: 220px;
+    height: 220px;
+  }
+}

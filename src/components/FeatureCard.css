@@ -1,0 +1,47 @@
+/* FeatureCard.css */
+
+.feature-card {
+  background: #1c1a30;
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: 1.13rem 1.3rem 1.13rem 1.11rem;
+  box-shadow: 0 2px 23px 0 rgba(48, 33, 73, 0.08);
+  min-width: 210px;
+  transition: background 0.14s, transform 0.14s, box-shadow 0.2s;
+  will-change: transform;
+  border: 1px solid #232132;
+  margin-bottom: 0;
+}
+
+.feature-card:hover {
+  background: #221c35;
+  box-shadow: 0 3px 21px 3px rgba(120, 79, 255, 0.17);
+  transform: scale(1.03) translateY(-3px);
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  margin-right: 0.2rem;
+  color: #a259ff;
+}
+
+.feature-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.22rem;
+}
+
+.feature-desc {
+  color: #b7bbcb;
+  font-size: 0.98rem;
+  line-height: 1.52;
+}
+
+@media (max-width: 700px) {
+  .feature-card {
+    padding: 0.97rem 1rem 1rem 0.87rem;
+  }
+}
