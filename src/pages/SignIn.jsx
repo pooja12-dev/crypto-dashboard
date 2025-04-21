@@ -46,7 +46,7 @@ export default function SignIn() {
           e.preventDefault();
           const isValid = validateFields();
           if (isValid) {
-            navigate("/dashboard");
+            navigate("/welcome");
           }
         }}
       >

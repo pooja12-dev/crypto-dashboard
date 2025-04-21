@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import "./App.css";
 import Dashboard from "./pages/Dashboard";
+import WelcomeVideo from "./pages/WelcomeVideo";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/whyus" element={<WhyUs />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/welcome" element={<WelcomeVideo />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>

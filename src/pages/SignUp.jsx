@@ -105,7 +105,7 @@ export default function SignUp() {
     localStorage.setItem("users", JSON.stringify(users));
 
     // Navigate to dashboard after successful signup
-    navigate("/dashboard");
+    navigate("/welcome");
   };
 
   return (
